@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Kuliah - Ilmu Komputer A</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .nav-pills .nav-link.active {
+            background-color: #0d6efd;
+        }
+        .schedule-card {
+            border-left: 5px solid #0d6efd;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="navbar-nav mx-auto">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="Jadwal.html">Jadwal</a>
+                <a class="nav-link" href="anggota.html">Anggota</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5 shadow">
+        <h1 class="display-4 fw-bold">Jadwal Kuliah</h1>
+        <p class="lead">Semester Ganjil - Ilmu Komputer A</p>
+    </header>
+
+    <div class="container my-5">
+        <ul class="nav nav-pills justify-content-center mb-4" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-senin-tab" data-bs-toggle="pill" data-bs-target="#pills-senin" type="button" role="tab">Senin</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-selasa-tab" data-bs-toggle="pill" data-bs-target="#pills-selasa" type="button" role="tab">Selasa</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-rabu-tab" data-bs-toggle="pill" data-bs-target="#pills-rabu" type="button" role="tab">Rabu</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-kamis-tab" data-bs-toggle="pill" data-bs-target="#pills-kamis" type="button" role="tab">Kamis</button>
+            </li>
+        </ul>
+
+        <div class="tab-content shadow-sm bg-white p-4 rounded" id="pills-tabContent">
+            
+            <div class="tab-pane fade show active" id="pills-senin" role="tabpanel">
+                <h4 class="mb-3">Hari Senin</h4>
+                <div class="card mb-3 schedule-card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 fw-bold text-primary">19.30 - 21.30</div>
+                            <div class="col-md-5 fw-bold">Kecerdasan Buatan</div>
+                            <div class="col-md-5 text-muted">M. Fadlan Almon, S.Pd., M.Pd.</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <div class="tab-pane fade" id="pills-selasa" role="tabpanel">
+                <h4 class="mb-3">Hari Selasa</h4>
+                <div class="card mb-3 schedule-card">
+                    <div class="card-body text-muted">Belum ada jadwal kuliah.</div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-rabu" role="tabpanel">
+                <h4 class="mb-3">Hari Rabu</h4>
+                <div class="card mb-3 schedule-card" style="border-left-color: #198754;">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 fw-bold text-success">08.00 - 10.00</div>
+                            <div class="col-md-5 fw-bold">Pemrograman Web</div>
+                            <div class="col-md-5 text-muted">Dosen Web</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-kamis" role="tabpanel">
+                <h4 class="mb-3">Hari Kamis</h4>
+                <div class="card mb-3 schedule-card">
+                    <div class="card-body text-muted">Belum ada jadwal kuliah.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="text-center py-4 bg-dark text-white mt-5">
+        <p>&copy; 2025 Ilmu Komputer A - Angkatan 3</p>
+    </footer>
+
+</body>
+</html>
